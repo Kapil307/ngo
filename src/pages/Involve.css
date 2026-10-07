@@ -1,0 +1,495 @@
+/* =========================================================
+   involve PAGE
+========================================================= */
+
+.involve-page {
+  width: 100%;
+  background: #fff;
+  color: #222;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.involve-hero {
+  position: relative;
+
+  width: 100%;
+  height: 230px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* HERO IMAGE */
+
+.involve-hero-image {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 0;
+}
+
+.involve-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* HERO OVERLAY */
+
+.involve-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  z-index: 1;
+}
+
+
+/* HERO TITLE */
+
+.involve-hero-content {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+
+  text-align: center;
+
+  z-index: 3;
+}
+
+.involve-hero-content h1 {
+  margin: 0;
+
+  color: #fff;
+
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
+
+  line-height: 1.1;
+}
+
+
+/* =========================================================
+   MAIN CONTAINER
+========================================================= */
+
+.involve-container {
+  width: min(100% - 40px, 700px);
+
+  margin: 0 auto;
+
+  text-align: left;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.involve-intro {
+  padding: 45px 20px 30px;
+
+  background: #fff;
+}
+
+.involve-intro .involve-container {
+  text-align: left;
+}
+
+.involve-intro h2 {
+  margin: 0 0 18px;
+
+  color: var(--primary-green);
+
+  font-size: 25px;
+
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  text-align: center;
+}
+
+.involve-intro p {
+  max-width: 700px;
+
+  margin: 0 auto 12px;
+
+  color: #444;
+
+  font-size: 13px;
+
+  line-height: 1.55;
+}
+
+.involve-intro strong {
+  color: #222;
+}
+
+
+/* =========================================================
+   DONATION OPTIONS
+========================================================= */
+
+.involve-options {
+  padding: 20px 20px 45px;
+
+  background: #fff;
+}
+
+.involve-section-title {
+  margin: 0 0 15px;
+
+  color: #222;
+
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   HELP CARDS
+========================================================= */
+
+.involve-help-grid {
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 8px;
+
+  width: 100%;
+}
+
+.involve-help-card {
+  min-height: 145px;
+
+  padding: 12px 8px;
+
+  border: 1px solid var(--primary-green);
+
+  border-radius: 9px;
+
+  text-align: center;
+
+  background: #fff;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: flex-start;
+}
+
+
+/* ICON */
+
+.involve-help-card i {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--primary-green);
+
+  font-size: 28px;
+}
+
+
+
+
+/* TITLE */
+
+.involve-help-card h4 {
+  margin: 0 0 7px;
+
+  color: #222;
+
+  font-size: 13px;
+
+  line-height: 1.15;
+
+  font-weight: 700;
+}
+
+
+/* DESCRIPTION */
+
+.involve-help-card p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 8px;
+
+  line-height: 1.4;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   DONATION BUTTONS
+========================================================= */
+
+.involve-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 22px;
+}
+
+.involve-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 7px 15px;
+
+  background: var(--primary-green);
+
+  color: #fff;
+
+  border-radius: 20px;
+
+  text-decoration: none;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  transition: all 0.25s ease;
+}
+
+.involve-btn:hover {
+  background: #1f5c2a;
+
+  color: #fff;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.involve-cta {
+  padding: 55px 20px;
+
+  background: var(--primary-green);
+
+  text-align: center;
+}
+
+.involve-cta-inner {
+  width: min(100% - 40px, 700px);
+
+  margin: 0 auto;
+}
+
+.involve-cta h2 {
+  margin: 0 0 10px;
+
+  color: #fff;
+
+  font-size: 28px;
+
+  font-weight: 700;
+}
+
+.involve-cta p {
+  margin: 0 auto 20px;
+
+  max-width: 550px;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   OUTLINE BUTTON
+========================================================= */
+
+.outline-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 9px 20px;
+
+  border: 1px solid #fff;
+
+  border-radius: 20px;
+
+  background: #fff;
+
+  color: var(--primary-green);
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  transition: all 0.25s ease;
+}
+
+.outline-btn:hover {
+  background: transparent;
+
+  color: #fff;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .involve-hero {
+    height: 220px;
+  }
+
+  .involve-help-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .involve-hero {
+    height: 210px;
+  }
+
+  .involve-hero > .navbar {
+    width: calc(100% - 30px);
+  }
+
+  .involve-intro {
+    padding: 35px 15px 20px;
+  }
+
+  .involve-intro h2 {
+    font-size: 23px;
+  }
+
+  .involve-intro p {
+    font-size: 13px;
+  }
+
+  .involve-options {
+    padding: 20px 15px 40px;
+  }
+
+  .involve-help-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+  }
+
+  .involve-help-card {
+    min-height: 150px;
+  }
+
+  .involve-buttons {
+    flex-direction: column;
+  }
+
+  .involve-btn {
+    width: 200px;
+  }
+
+  .involve-cta {
+    padding: 45px 15px;
+  }
+
+  .involve-cta h2 {
+    font-size: 25px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+  .involve-hero {
+    height: 190px;
+  }
+
+  .involve-hero-content h1 {
+    font-size: 28px;
+  }
+
+  .involve-container {
+    width: calc(100% - 25px);
+  }
+
+  .involve-help-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .involve-help-card {
+    min-height: 145px;
+    padding: 12px 6px;
+  }
+
+  .involve-help-card i {
+    font-size: 25px;
+  }
+
+  .involve-help-card h4 {
+    font-size: 12px;
+  }
+
+  .involve-help-card p {
+    font-size: 8px;
+  }
+
+}

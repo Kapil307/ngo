@@ -1,0 +1,537 @@
+/* =========================================================
+   DONATE PAGE
+========================================================= */
+
+.donate-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #fff;
+  color: #222;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.donate-hero {
+  position: relative;
+
+  width: 100%;
+  height: 420px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #222;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.donate-hero-image {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  max-width: none !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center center;
+
+  z-index: 0;
+}
+
+
+/* =========================================================
+   HERO OVERLAY
+========================================================= */
+
+.donate-hero-overlay {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background: rgba(0, 0, 0, 0.45);
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.donate-hero > .navbar {
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: 10;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.donate-hero-content {
+  position: relative;
+
+  z-index: 5;
+
+  width: 100%;
+
+  min-height: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+
+  text-align: center;
+}
+
+
+.donate-hero-content h1 {
+  margin: 0;
+
+  padding: 0 20px;
+
+  color: #fff;
+
+  font-size: clamp(32px, 5vw, 60px);
+
+  font-weight: 800;
+
+  line-height: 1.15;
+
+  text-align: center;
+
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================================
+   DONATION SECTION
+========================================================= */
+
+.donation-section {
+  padding: 70px 20px;
+
+  background: #fff;
+}
+
+
+/* =========================================================
+   DONATION CARD
+========================================================= */
+
+.donate-card {
+  width: 100%;
+
+  min-height: 430px;
+
+  padding: 30px 25px;
+
+  background: #fff;
+
+  border: 1px solid #e1e1e1;
+
+  border-radius: 15px;
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.08);
+
+  text-align: center;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.donate-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 14px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================================
+   CARD HEADING
+========================================================= */
+
+.donate-card h3 {
+  margin: 0 0 25px;
+
+  color: var(--primary-green);
+
+  font-size: 24px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   ICICI LOGO
+========================================================= */
+
+.icici-logo {
+  width: 150px !important;
+
+  height: auto !important;
+
+  max-width: 100% !important;
+
+  margin: 0 auto 20px;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   FOUNDATION NAME
+========================================================= */
+
+.foundation-name {
+  margin: 10px 0;
+
+  color: #222;
+
+  font-size: 14px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   SCAN TEXT
+========================================================= */
+
+.scan-text {
+  margin: 15px 0 10px;
+
+  color: #555;
+
+  font-size: 14px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   UPI QR
+========================================================= */
+
+.upi-qr {
+  width: 190px !important;
+
+  height: 190px !important;
+
+  max-width: 100% !important;
+
+  margin: 10px auto 15px;
+
+  display: block;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   UPI ID
+========================================================= */
+
+.upi-id {
+  margin: 15px 0;
+
+  color: #333;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  word-break: break-word;
+}
+
+
+/* =========================================================
+   UPI BOTTOM
+========================================================= */
+
+.upi-bottom {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 8px;
+
+  margin-top: 15px;
+
+  color: var(--primary-green);
+
+  font-size: 18px;
+}
+
+
+/* =========================================================
+   PAYMENT LOGOS
+========================================================= */
+
+.payment-logos {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 15px;
+
+  margin-top: 20px;
+
+  color: #555;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   NEFT CARD
+========================================================= */
+
+.neft-card {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 430px;
+}
+
+
+.neft-card p {
+  margin: 0;
+
+  color: #777;
+
+  font-size: 16px;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.donate-cta {
+  padding: 70px 20px;
+
+  background: var(--primary-green);
+
+  text-align: center;
+}
+
+
+.donate-cta-inner {
+  width: min(800px, 100%);
+
+  margin: 0 auto;
+}
+
+
+.donate-cta h2 {
+  margin: 0 0 15px;
+
+  color: #fff;
+
+  font-size: clamp(28px, 4vw, 42px);
+
+  font-weight: 700;
+}
+
+
+.donate-cta p {
+  margin: 0 0 25px;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  font-size: 16px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   OUTLINE BUTTON
+========================================================= */
+
+.outline-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-width: 150px;
+
+  padding: 12px 25px;
+
+  border: 2px solid #fff;
+
+  border-radius: 5px;
+
+  background: transparent;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  transition: all 0.25s ease;
+}
+
+
+.outline-btn:hover {
+  background: #fff;
+
+  color: var(--primary-green);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .donate-hero {
+    height: 350px;
+  }
+
+  .donate-hero-content h1 {
+    font-size: 45px;
+  }
+
+  .donation-section {
+    padding: 60px 20px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+  .donate-hero {
+    height: 300px;
+  }
+
+  .donate-hero-content h1 {
+    font-size: 34px;
+
+    line-height: 1.2;
+  }
+
+  .donation-section {
+    padding: 50px 15px;
+  }
+
+  .donate-card {
+    min-height: auto;
+  }
+
+  .neft-card {
+    min-height: 280px;
+  }
+
+  .donate-cta {
+    padding: 55px 20px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+  .donate-hero {
+    height: 240px;
+  }
+
+  .donate-hero-content {
+    padding: 15px;
+  }
+
+  .donate-hero-content h1 {
+    font-size: 28px;
+
+    line-height: 1.2;
+  }
+
+  .donate-card {
+    padding: 25px 18px;
+
+    border-radius: 12px;
+  }
+
+  .donate-card h3 {
+    font-size: 21px;
+  }
+
+  .upi-qr {
+    width: 170px !important;
+
+    height: 170px !important;
+  }
+
+  .donate-cta h2 {
+    font-size: 28px;
+  }
+
+  .donate-cta p {
+    font-size: 14px;
+  }
+
+}

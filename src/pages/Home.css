@@ -1,0 +1,762 @@
+
+
+/* =========================================================
+   PAGE LOAD - SLIDE UP ANIMATION
+========================================================= */
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+/* =========================================================
+   INTRO SECTION
+========================================================= */
+
+.home-intro {
+    animation: slideUp 0.9s ease-out both;
+    animation-delay: 0.2s;
+    background: #103214;
+    color: white;
+}
+
+.home-intro p {
+    animation: slideUp 0.8s ease-out both;
+    animation-delay: 0.35s;
+}
+
+.intro-links{
+    text-align: center;
+}
+
+.intro-links a {
+    color: white;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.section-heading {
+    animation: slideUp 0.8s ease-out both;
+    animation-delay: 0.15s;
+}
+
+
+/* =========================================================
+   PILLARS
+========================================================= */
+
+.pillar-row {
+    animation: slideUp 0.8s ease-out both;
+}
+
+.pillar-row:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.pillar-row:nth-child(2) {
+    animation-delay: 0.35s;
+}
+
+.pillar-row:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.pillar-row:nth-child(4) {
+    animation-delay: 0.65s;
+}
+
+
+/* =========================================================
+   PILLAR TITLE
+========================================================= */
+
+.pillar-title {
+    animation: slideUp 0.7s ease-out both;
+}
+
+
+/* =========================================================
+   GRANT SECTION
+========================================================= */
+
+.grant-content {
+    animation: slideUp 0.9s ease-out both;
+    animation-delay: 0.25s;
+}
+
+.grant-text {
+    animation: slideUp 0.8s ease-out both;
+    animation-delay: 0.3s;
+}
+
+.grant-image {
+    animation: slideUp 0.8s ease-out both;
+    animation-delay: 0.45s;
+}
+
+/* =========================================================
+   SMOOTH PERFORMANCE
+========================================================= */
+
+.hero-content h1,
+.hero-buttons,
+.announcement-bar,
+.home-intro,
+.home-intro p,
+.section-heading,
+.pillar-row,
+.pillar-title,
+.grant-content,
+.grant-text,
+.grant-image {
+    will-change: transform, opacity;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .hero-content h1,
+    .hero-buttons,
+    .announcement-bar,
+    .home-intro,
+    .home-intro p,
+    .section-heading,
+    .pillar-row,
+    .pillar-title,
+    .grant-content,
+    .grant-text,
+    .grant-image {
+        animation: none;
+    }
+}
+.hero-short {
+  position: relative;
+  height: 420px;
+  min-height: 420px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+}
+
+.hero-short .hero-content {
+  position: relative;
+  z-index: 2;
+
+  height: 420px;
+  min-height: 420px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+@media (max-width: 576px) {
+  .hero-short {
+    height: 360px;
+    min-height: 360px;
+  }
+
+  .hero-short .hero-content {
+    height: 360px;
+    min-height: 360px;
+  }
+}
+
+.focus-card {
+  border: none;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.focus-image-wrapper {
+  position: relative;
+  overflow: hidden;
+   border-radius: 20px;
+}
+
+.focus-image-wrapper img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+ 
+}
+
+.focus-title-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  padding: 18px 15px;
+
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card {
+  overflow: hidden;
+  border: none;
+}
+/* =========================
+   WHAT WE DO
+========================= */
+
+.what-we-do {
+  padding: 35px 0 50px;
+  background: #fff;
+}
+
+
+/* Section Heading */
+
+.what-we-do .section-heading {
+  text-align: center;
+  margin-bottom: 38px;
+}
+
+.what-we-do .section-heading h2 {
+  margin: 0;
+  color: #245c20;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+.what-we-do .section-heading p {
+  margin: 4px 0 0;
+  color: #245c20;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+
+/* Main Content */
+
+.what-we-do .content-narrow {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+
+/* Each Pillar */
+
+.what-we-do .pillar-row {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  column-gap: 30px;
+  margin-bottom: 42px;
+  align-items: start;
+}
+
+
+/* Last row */
+
+.what-we-do .pillar-row:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Left Title */
+
+.what-we-do .pillar-title {
+  color: #245c20;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.05;
+  text-transform: uppercase;
+  padding-top: 2px;
+}
+
+
+/* Right Content */
+
+.what-we-do .pillar-content {
+  color: #111;
+  font-size: 13.5px;
+  line-height: 1.4;
+}
+
+
+/* Description */
+
+.what-we-do .pillar-content p {
+  margin: 0;
+}
+
+
+/* Care in Action */
+
+.what-we-do .pillar-content .care-text {
+  margin-top: 13px;
+  color: #245c20;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.what-we-do .pillar-content .care-text strong {
+  font-weight: 800;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .what-we-do {
+    padding: 30px 20px 40px;
+  }
+
+  .what-we-do .section-heading h2 {
+    font-size: 28px;
+  }
+
+  .what-we-do .section-heading p {
+    font-size: 14px;
+  }
+
+  .what-we-do .pillar-row {
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+    margin-bottom: 35px;
+  }
+
+  .what-we-do .pillar-title {
+    font-size: 22px;
+  }
+
+  .what-we-do .pillar-content {
+    font-size: 14px;
+  }
+}
+/* =========================
+   GRANT SECTION
+========================= */
+
+.grant-section {
+  width: 100%;
+  padding: 45px 0;
+  background: #ffffff;
+}
+
+.grant-content {
+  width: 90%;
+  max-width: 1050px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 55px;
+}
+
+
+/* =========================
+   LEFT TEXT
+========================= */
+
+.grant-text {
+  width: 100%;
+}
+
+.grant-text h2 {
+  margin: 0 0 12px;
+
+  color: #245c20;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.grant-text p {
+  margin: 0 0 25px;
+
+  color: #111;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.grant-text .green-btn {
+  display: inline-block;
+
+  padding: 10px 23px;
+
+  background: #245c20;
+  color: #ffffff;
+
+  border-radius: 25px;
+
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+
+  transition: 0.3s ease;
+}
+
+.grant-text .green-btn:hover {
+  background: #174815;
+  color: #ffffff;
+}
+
+
+/* =========================
+   RIGHT IMAGE
+========================= */
+
+.grant-image {
+  width: 100%;
+  height: 273px;
+
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.grant-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .grant-content {
+    width: 90%;
+    gap: 35px;
+  }
+
+  .grant-text h2 {
+    font-size: 22px;
+  }
+
+  .grant-image {
+    height: 250px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .grant-section {
+    padding: 35px 20px;
+  }
+
+  .grant-content {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .grant-text h2 {
+    font-size: 22px;
+  }
+
+  .grant-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .grant-image {
+    height: 240px;
+    border-radius: 16px;
+  }
+}
+
+.grant-image {
+  width: 100%;
+  height: 273px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.grant-image .carousel,
+.grant-image .carousel-inner,
+.grant-image .carousel-item {
+  width: 100%;
+  height: 100%;
+}
+
+.grant-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+
+/* =================================
+   EVENTS SECTION
+================================= */
+
+.home-events {
+  width: 100%;
+  padding: 45px 0 50px;
+  background: #f1f4ef;
+}
+
+
+/* =================================
+   SECTION HEADING
+================================= */
+
+.home-events .section-heading {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.home-events .section-heading h2 {
+  margin: 0;
+
+  color: #245c20;
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.home-events .section-heading p {
+  margin: 6px 0 0;
+
+  color: #245c20;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+
+/* =================================
+   EVENT CONTAINER
+================================= */
+
+.event-preview {
+  width: 90%;
+  max-width: 915px;
+  min-height: 265px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 295px 1fr;
+
+  background: #ffffff;
+
+  border-radius: 12px;
+  overflow: hidden;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  border: 1px solid #dfe3df;
+}
+
+
+/* =================================
+   EVENT IMAGE
+================================= */
+
+.event-image {
+  width: 100%;
+  height: 265px;
+  overflow: hidden;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+
+/* =================================
+   EVENT INFORMATION
+================================= */
+
+.event-info {
+  padding: 15px 18px;
+}
+
+.event-info h3 {
+  margin: 0 0 12px;
+
+  color: #355f2d;
+
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+
+/* =================================
+   EVENT META
+================================= */
+
+.event-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  margin-bottom: 15px;
+}
+
+.event-meta span {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 7px 10px;
+
+  border: 1px solid #dce2e8;
+  border-radius: 5px;
+
+  color: #4c5a70;
+
+  font-size: 12px;
+  background: #fff;
+}
+
+
+/* =================================
+   EVENT DESCRIPTION
+================================= */
+
+.event-info p {
+  margin: 0 0 15px;
+
+  color: #596273;
+
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+
+/* =================================
+   READ MORE BUTTON
+================================= */
+
+.home-events .green-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 9px 17px;
+
+  background: #245c20;
+  color: #ffffff;
+
+  border-radius: 22px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.home-events .green-btn:hover {
+  background: #174815;
+  color: #ffffff;
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 768px) {
+
+  .home-events {
+    padding: 35px 0;
+  }
+
+  .home-events .section-heading h2 {
+    font-size: 32px;
+  }
+
+  .home-events .section-heading p {
+    font-size: 15px;
+  }
+
+  .event-preview {
+    width: 90%;
+
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+  }
+
+  .event-image {
+    height: 220px;
+  }
+
+  .event-info {
+    padding: 18px;
+  }
+
+  .event-info h3 {
+    font-size: 18px;
+  }
+
+  .event-meta {
+    gap: 6px;
+  }
+}

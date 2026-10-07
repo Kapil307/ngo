@@ -1,0 +1,449 @@
+/* =========================================================
+   VOLUNTEER PAGE
+========================================================= */
+
+.volunteer-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #fff;
+
+  color: #222;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.volunteer-hero {
+  position: relative;
+
+  width: 100%;
+  height: 230px;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #000;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.volunteer-hero-image {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 0;
+
+  overflow: hidden;
+}
+
+.volunteer-hero-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+/* =========================================================
+   HERO OVERLAY
+========================================================= */
+
+.volunteer-hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.42);
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   NAVBAR
+========================================================= */
+
+.volunteer-hero > .navbar {
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  z-index: 10;
+
+  width: auto;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.volunteer-hero-content {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+
+  padding: 0 20px;
+
+  text-align: center;
+
+  z-index: 5;
+}
+
+.volunteer-hero-content h1 {
+  margin: 0;
+
+  color: #fff;
+
+  font-size: clamp(28px, 4vw, 43px);
+
+  font-weight: 800;
+
+  line-height: 1.1;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   COMMON CONTAINER
+========================================================= */
+
+.volunteer-container {
+  width: min(100% - 40px, 700px);
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.volunteer-intro {
+  padding: 18px 20px 20px;
+
+  background: #fff;
+}
+
+.volunteer-intro .volunteer-container {
+  text-align: left;
+}
+
+.section-label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: var(--primary-green);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.5px;
+
+  text-transform: uppercase;
+}
+
+.volunteer-intro h2 {
+  margin: 0 0 8px;
+
+  color: var(--primary-green);
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+}
+
+.volunteer-intro p {
+  max-width: 700px;
+
+  margin: 0;
+
+  color: #555;
+
+  font-size: 11px;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   APPLICATION SECTION
+========================================================= */
+
+.volunteer-application {
+  padding: 8px 20px 24px;
+
+  background: #fff;
+}
+
+
+/* =========================================================
+   FORM CARD
+========================================================= */
+
+.volunteer-form-card {
+  width: 215px;
+
+  margin: 0 auto;
+
+  padding: 10px 12px 12px;
+
+  border: 1px solid #333;
+
+  border-radius: 7px;
+
+  background: #fff;
+
+  box-sizing: border-box;
+}
+
+.volunteer-form-card h2 {
+  margin: 0 0 8px;
+
+  color: #222;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.volunteer-form-card form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+
+/* =========================================================
+   INPUTS
+========================================================= */
+
+.volunteer-form-card input,
+.volunteer-form-card select {
+  width: 100%;
+
+  height: 18px;
+
+  padding: 2px 7px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #777;
+
+  border-radius: 10px;
+
+  background: #fff;
+
+  color: #444;
+
+  font-family: inherit;
+
+  font-size: 7px;
+
+  outline: none;
+}
+
+.volunteer-form-card input::placeholder {
+  color: #777;
+}
+
+.volunteer-form-card input:focus,
+.volunteer-form-card select:focus {
+  border-color: var(--primary-green);
+}
+
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+.volunteer-form-card select {
+  cursor: pointer;
+
+  appearance: auto;
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.volunteer-submit {
+  width: 100%;
+
+  height: 19px;
+
+  margin-top: 1px;
+
+  padding: 2px 8px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: var(--primary-green);
+
+  color: #fff;
+
+  font-size: 7px;
+
+  font-weight: 700;
+
+  text-transform: capitalize;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.volunteer-submit:hover {
+  background: #1f5c2a;
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.volunteer-page footer {
+  width: 100%;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .volunteer-hero {
+    height: 220px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+  .volunteer-hero {
+    height: 210px;
+  }
+
+  .volunteer-hero-content h1 {
+    font-size: 28px;
+  }
+
+  .volunteer-intro {
+    padding: 20px 15px;
+  }
+
+  .volunteer-application {
+    padding: 10px 15px 30px;
+  }
+
+  .volunteer-container {
+    width: calc(100% - 20px);
+  }
+
+  .volunteer-form-card {
+    width: 260px;
+
+    padding: 14px;
+  }
+
+  .volunteer-form-card h2 {
+    font-size: 16px;
+  }
+
+  .volunteer-form-card input,
+  .volunteer-form-card select {
+    height: 25px;
+
+    font-size: 10px;
+  }
+
+  .volunteer-submit {
+    height: 26px;
+
+    font-size: 10px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+  .volunteer-hero {
+    height: 195px;
+  }
+
+  .volunteer-hero-content h1 {
+    font-size: 25px;
+  }
+
+  .volunteer-intro h2 {
+    font-size: 20px;
+  }
+
+  .volunteer-intro p {
+    font-size: 12px;
+  }
+
+  .volunteer-form-card {
+    width: 280px;
+  }
+
+}

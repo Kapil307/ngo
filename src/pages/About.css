@@ -1,0 +1,217 @@
+/* =========================================
+   INNER PAGE HERO
+========================================= */
+
+.inner-hero {
+  position:relative;
+  height: 350px;
+  background-size:cover;
+  background-position: center;
+  overflow:hidden;
+}
+
+.about-hero {
+  background-image: url("/images/hero/about-hands.jpg");
+}
+
+.inner-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.48);
+  z-index: 1;
+}
+
+.inner-hero-content {
+  position:rel;
+  z-index: 2;
+  height: 100%;
+  padding-top: 35px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  color: white;
+
+  animation: slideUp 1s ease-out forwards;
+}
+
+.inner-hero-content h1 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.inner-hero-content h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+
+/* =========================================
+   ABOUT CONTENT
+========================================= */
+
+.about-content {
+  background: white;
+
+  animation: slideUp 1s ease-out 0.2s forwards;
+
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.about-container {
+  width: min(100% - 40px, 950px);
+  margin: auto;
+}
+
+.about-block {
+  margin-bottom: 42px;
+}
+
+.about-block h2 {
+  color: var(--primary-green);
+  text-align: center;
+
+  font-size: 21px;
+  font-weight: 800;
+
+  margin: 0 0 18px;
+}
+
+.about-block p {
+  font-size: 12px;
+  line-height: 1.55;
+
+  margin: 0 0 15px;
+}
+
+
+/* =========================================
+   VISION / MISSION
+========================================= */
+
+.vision-mission-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+
+  margin-top: 40px;
+
+  animation: slideUp 1s ease-out 0.4s forwards;
+
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+.vision-mission-card {
+  background: var(--primary-green);
+  color: white;
+
+  border-radius: 10px;
+
+  padding: 25px 20px;
+  min-height: 125px;
+}
+
+.vision-mission-card h3 {
+  font-size: 16px;
+  font-weight: 800;
+
+  margin: 0 0 10px;
+}
+
+.vision-mission-card p {
+  font-size: 10px;
+  line-height: 1.45;
+
+  margin: 0;
+}
+
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================
+   ABOUT MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .inner-hero {
+    height: 390px;
+  }
+
+  .inner-hero-content h1 {
+    font-size: 25px;
+  }
+
+  .inner-hero-content h2 {
+    font-size: 18px;
+  }
+
+  .about-container {
+    width: min(100% - 30px, 700px);
+  }
+
+  .about-block h2 {
+    font-size: 20px;
+  }
+
+  .about-block p {
+    font-size: 12px;
+  }
+
+  .vision-mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vision-mission-card {
+    min-height: auto;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .inner-hero {
+    height: 350px;
+  }
+
+  .inner-hero-content {
+    padding: 20px;
+  }
+
+  .inner-hero-content h1 {
+    font-size: 22px;
+  }
+
+  .inner-hero-content h2 {
+    font-size: 16px;
+  }
+}
+.about-img img {
+ width: 100%;
+  object-fit: cover;
+  display: block;
+}

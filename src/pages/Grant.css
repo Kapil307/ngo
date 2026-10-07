@@ -1,0 +1,280 @@
+ /* =========================================
+   GRANT PAGE LOAD ANIMATION
+========================================= */
+
+.grant-intro,
+.grant-impact,
+.grant-cta {
+  opacity: 0;
+  transform: translateY(60px);
+  animation: grantSlideUp 0.9s ease-out forwards;
+}
+
+
+/* =========================================
+   STAGGERED CONTENT
+========================================= */
+
+.grant-intro {
+  animation-delay: 0.15s;
+}
+
+.grant-impact {
+  animation-delay: 0.3s;
+}
+
+.grant-cta {
+  animation-delay: 0.45s;
+}
+
+
+/* =========================================
+   IMPACT CARDS ANIMATION
+========================================= */
+
+.grant-impact-card {
+  opacity: 0;
+  transform: translateY(50px);
+  animation: grantCardSlideUp 0.7s ease-out forwards;
+}
+
+.grant-impact-card:nth-child(1) {
+  animation-delay: 0.45s;
+}
+
+.grant-impact-card:nth-child(2) {
+  animation-delay: 0.55s;
+}
+
+.grant-impact-card:nth-child(3) {
+  animation-delay: 0.65s;
+}
+
+.grant-impact-card:nth-child(4) {
+  animation-delay: 0.75s;
+}
+
+
+/* =========================================
+   ANIMATION
+========================================= */
+
+@keyframes grantSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes grantCardSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .grant-intro,
+  .grant-impact,
+  .grant-cta,
+  .grant-impact-card {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+}
+/* =========================================
+   GRANT PAGE
+========================================= */
+
+.grant-hero {
+  background-image: url("/images/hero/grant-hands-grass.jpg");
+  background-position: center;
+}
+
+
+/* =========================================
+   GRANT INTRO
+========================================= */
+
+.grant-intro {
+  background: white;
+}
+
+.grant-page-container {
+  width: min(100% - 40px, 950px);
+  margin: auto;
+}
+
+.grant-intro h2 {
+  color: var(--primary-green);
+  text-align: center;
+
+  font-size: 27px;
+  font-weight: 800;
+
+  margin-bottom: 25px;
+}
+
+.grant-intro p {
+  max-width: 780px;
+  margin: 0 auto 15px;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   GRANT IMPACT
+========================================= */
+
+.grant-impact {
+  background: var(--light-green);
+  padding: 70px 0;
+}
+
+.grant-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.grant-impact-card {
+  background: white;
+  border: 1px solid rgba(40, 89, 29, 0.35);
+  border-radius: 10px;
+
+  padding: 25px 18px;
+
+  min-height: 220px;
+
+  transition: transform 0.25s ease,
+              box-shadow 0.25s ease;
+}
+
+.grant-impact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.grant-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: var(--primary-green);
+  color: white;
+
+  margin-bottom: 18px;
+}
+
+.grant-impact-card h3 {
+  color: var(--primary-green);
+
+  font-size: 15px;
+  font-weight: 800;
+
+  margin-bottom: 12px;
+}
+
+.grant-impact-card p {
+  font-size: 10px;
+  line-height: 1.55;
+
+  margin: 0;
+}
+
+
+/* =========================================
+   GRANT CTA
+========================================= */
+
+.grant-cta {
+  background: var(--dark-green);
+  color: white;
+
+  padding: 65px 20px;
+
+  text-align: center;
+}
+
+.grant-cta-inner {
+  max-width: 650px;
+  margin: auto;
+}
+
+.grant-cta h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.grant-cta p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+.grant-cta .outline-btn {
+  display: inline-block;
+}
+
+
+/* =========================================
+   GRANT MOBILE
+========================================= */
+
+@media (max-width: 991px) {
+
+  .grant-impact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .grant-page-container {
+    width: min(100% - 30px, 700px);
+  }
+
+  .grant-impact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grant-impact-card {
+    min-height: auto;
+  }
+
+  .grant-cta h2 {
+    font-size: 23px;
+  }
+
+} 
+.hero-img{
+    position: cover;
+    width: 90%;
+}
