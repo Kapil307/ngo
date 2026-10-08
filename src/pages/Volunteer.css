@@ -92,7 +92,6 @@
 
   z-index: 10;
 
-  width: auto;
 }
 
 
@@ -214,7 +213,8 @@
 ========================================================= */
 
 .volunteer-form-card {
-  width: 215px;
+  width: 100%;
+  max-width: 500px;
 
   margin: 0 auto;
 
@@ -395,7 +395,8 @@
   }
 
   .volunteer-form-card {
-    width: 260px;
+    width: 100%;
+    max-width: 500px;
 
     padding: 14px;
   }
@@ -443,7 +444,16 @@
   }
 
   .volunteer-form-card {
-    width: 280px;
+    width: 100%;
+    max-width: 500px;
   }
 
 }
+
+/* FINAL VOLUNTEER RESPONSIVE FIX */
+.volunteer-page{width:100%;max-width:100%;min-width:0;margin:0;padding:0;overflow-x:hidden;}
+.volunteer-hero{width:100%;max-width:100%;}
+.volunteer-hero>.navbar{width:min(910px,calc(100vw - 30px));max-width:calc(100vw - 30px);}
+.volunteer-form-card{width:100%;max-width:500px;}
+@media(max-width:700px){.volunteer-hero>.navbar{width:calc(100vw - 30px);max-width:calc(100vw - 30px);}.volunteer-form-card{width:100%;max-width:500px;padding:20px;}.volunteer-form-card input,.volunteer-form-card select{height:38px;font-size:12px;}.volunteer-submit{height:40px;font-size:12px;}}
+@media(max-width:450px){.volunteer-hero>.navbar{width:calc(100vw - 20px);max-width:calc(100vw - 20px);}.volunteer-form-card{width:100%;max-width:100%;padding:16px;}}

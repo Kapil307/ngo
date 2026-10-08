@@ -11,18 +11,19 @@ function Impact() {
   return (
     <div className="impact-page">
 
+      <Navbar />
       {/* HERO */}
 
       <section className="impact-hero">
 
         <img
-          src="/image/impact.png"
+          src="/image/impact.webp"
           alt="Witness the Change"
         />
 
         <div className="impact-overlay"></div>
 
-        <Navbar />
+
 
         <div className="impact-hero-title">
           <h1>
@@ -192,7 +193,7 @@ function Impact() {
       </section>
 
 
-     
+
 
       <Footer />
 

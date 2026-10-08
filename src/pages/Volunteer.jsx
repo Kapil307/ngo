@@ -1,153 +1,151 @@
-import { Link } from "react-router-dom";
-
+import React from "react";
 import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
-
-import "../styles/variables.css";
-import "../styles/global.css";
 import "./Volunteer.css";
 
 function Volunteer() {
   return (
     <div className="volunteer-page">
 
-      {/* =================================================
-          HERO
-      ================================================= */}
-
+      <Navbar />
+      {/* =========================
+          HERO SECTION
+      ========================= */}
       <section className="volunteer-hero">
 
-        {/* HERO IMAGE */}
         <div className="volunteer-hero-image">
           <img
-            src="/image/volunteer.png"
+            src="/image/volunteer.webp"
             alt="Volunteers working together"
           />
         </div>
 
-        {/* DARK OVERLAY */}
         <div className="volunteer-hero-overlay"></div>
 
-        {/* NAVBAR */}
-        <Navbar />
 
-        {/* HERO TITLE */}
+
         <div className="volunteer-hero-content">
-          <h1>
-            Volunteer: Lend Your Time &amp; Skills
-          </h1>
+          <h1>Volunteer: Lend Your Time &amp; Skills</h1>
         </div>
 
       </section>
 
 
-      {/* =================================================
-          INTRO
-      ================================================= */}
-
-      <section className="volunteer-intro">
-
-        <div className="volunteer-container">
-
-          <span className="section-label">
-            VOLUNTEER
-          </span>
-
-          <h2>
-            Volunteer
-          </h2>
-
-          <p>
-            Your time and expertise are invaluable. We offer structured
-            volunteer programs that allow skilled individuals to contribute
-            directly to our capacity-building efforts, strengthening our
-            partner NGOs. General volunteers are also crucial for events
-            and community outreach.
-          </p>
-
-        </div>
-
-      </section>
-
-
-      {/* =================================================
-          APPLICATION FORM
-      ================================================= */}
-
-      <section className="volunteer-application">
+      {/* =========================
+          VOLUNTEER CONTENT
+      ========================= */}
+      <main className="volunteer-main">
 
         <div className="volunteer-container">
 
+          <div className="volunteer-intro">
+            <h2>Join Us as a Volunteer</h2>
+
+            <p>
+              Your time, skills, and support can make a meaningful
+              difference. Join us and contribute towards creating
+              positive change in the community.
+            </p>
+          </div>
+
+
+          {/* =========================
+              VOLUNTEER FORM
+          ========================= */}
           <div className="volunteer-form-card">
 
-            <h2>
-              Apply for Volunteering Now!
-            </h2>
+            <h2>Volunteer Registration</h2>
 
             <form>
 
-              {/* NAME */}
-              <input
-                type="text"
-                placeholder="Your Name"
-                required
-              />
+              <div className="volunteer-form-group">
+                <label htmlFor="name">Full Name</label>
 
-              {/* EMAIL */}
-              <input
-                type="email"
-                placeholder="Your Email"
-                required
-              />
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your full name"
+                />
+              </div>
 
-              {/* PHONE */}
-              <input
-                type="tel"
-                placeholder="Phone Number"
-                required
-              />
 
-              {/* OPPORTUNITY */}
-              <select defaultValue="">
-                <option value="" disabled>
-                  Volunteer Opportunities
-                </option>
+              <div className="volunteer-form-group">
+                <label htmlFor="email">Email</label>
 
-                <option value="education">
-                  Education
-                </option>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your email"
+                />
+              </div>
 
-                <option value="healthcare">
-                  Healthcare
-                </option>
 
-                <option value="women-child">
-                  Women &amp; Child Welfare
-                </option>
+              <div className="volunteer-form-group">
+                <label htmlFor="phone">Phone Number</label>
 
-                <option value="environment">
-                  Environment
-                </option>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                />
+              </div>
 
-                <option value="animal">
-                  Animal Welfare
-                </option>
 
-                <option value="elderly">
-                  Elderly Care
-                </option>
+              <div className="volunteer-form-group">
+                <label htmlFor="interest">Area of Interest</label>
 
-                <option value="skill">
-                  Skill Development
-                </option>
-              </select>
+                <select
+                  id="interest"
+                  name="interest"
+                  defaultValue=""
+                >
+                  <option value="" disabled>
+                    Select an area
+                  </option>
 
-              {/* SUBMIT */}
+                  <option value="education">
+                    Education
+                  </option>
+
+                  <option value="environment">
+                    Environment
+                  </option>
+
+                  <option value="community">
+                    Community Development
+                  </option>
+
+                  <option value="events">
+                    Events
+                  </option>
+
+                  <option value="other">
+                    Other
+                  </option>
+                </select>
+              </div>
+
+
+              <div className="volunteer-form-group">
+                <label htmlFor="message">Message</label>
+
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Tell us how you would like to contribute"
+                ></textarea>
+              </div>
+
+
               <button
                 type="submit"
                 className="volunteer-submit"
               >
-                Submit
+                SUBMIT
               </button>
 
             </form>
@@ -156,13 +154,12 @@ function Volunteer() {
 
         </div>
 
-      </section>
+      </main>
 
 
-      {/* =================================================
+      {/* =========================
           FOOTER
-      ================================================= */}
-
+      ========================= */}
       <Footer />
 
     </div>

@@ -35,10 +35,10 @@ const images = {
 function Home() {
   return (
     <div className="home-page">
-
+ <Navbar />
       <header className="hero-slider">
 
-        <Navbar />
+       
 
         <div
           id="heroCarousel"

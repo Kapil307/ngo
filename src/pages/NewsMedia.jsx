@@ -12,6 +12,9 @@ function NewsMedia() {
   return (
     <div className="news-page">
 
+      {/* NAVBAR */}
+      <Navbar />
+
       {/* =================================================
           HERO
       ================================================= */}
@@ -22,7 +25,7 @@ function NewsMedia() {
         <div className="hero-img">
 
           <img
-            src="/image/news.png"
+            src="/image/news.webp"
             alt="Adhishrihaan Foundation News and Media"
           />
 
@@ -33,8 +36,7 @@ function NewsMedia() {
         <div className="inner-hero-overlay"></div>
 
 
-        {/* NAVBAR */}
-        <Navbar />
+
 
 
         {/* HERO TITLE */}

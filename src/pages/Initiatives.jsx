@@ -29,9 +29,10 @@ const initiativeImages = {
 function Initiatives() {
   return (
     <div className="initiatives-page">
-
+         
+          <Navbar />
       {/* HERO */}
-
+         
       <section className="initiatives-hero">
 
         {/* Hero Image */}
@@ -47,7 +48,7 @@ function Initiatives() {
 
         {/* Navbar */}
         <div className="initiatives-navbar">
-          <Navbar />
+         
         </div>
 
         {/* Hero Title */}

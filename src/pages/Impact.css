@@ -174,3 +174,13 @@
     width: calc(100% - 30px);
   }
 }
+
+/* =========================================================
+   FINAL RESPONSIVE FIX
+========================================================= */
+.impact-page{width:100%;max-width:100%;min-width:0;margin:0;padding:0;overflow-x:hidden;}
+.impact-hero{width:100%;max-width:100%;}
+.impact-hero>.navbar{z-index:10;}
+.impact-container{width:calc(100% - 40px);max-width:1050px;margin:0 auto;}
+@media(max-width:700px){.impact-hero{height:260px;}.impact-hero-title h1{font-size:27px;}.impact-container{width:calc(100% - 30px);}}
+@media(max-width:450px){.impact-hero{height:230px;}.impact-hero-title h1{font-size:23px;}.impact-container{width:calc(100% - 20px);}.impact-cards{grid-template-columns:1fr;}}

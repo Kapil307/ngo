@@ -10,7 +10,9 @@ import "./Involve.css";
 function Involve() {
   return (
     <div className="involve-page">
-
+  
+  <Navbar />
+  
       {/* =========================================
           HERO
       ========================================= */}
@@ -19,14 +21,14 @@ function Involve() {
 
         <div className="involve-hero-image">
           <img
-            src="/image/about.png"
+            src="/image/about.webp"
             alt="Get involved and support our mission"
           />
         </div>
 
         <div className="involve-hero-overlay"></div>
 
-        <Navbar />
+        
 
         <div className="involve-hero-content">
           <h1>Get Involved</h1>

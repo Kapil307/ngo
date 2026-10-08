@@ -9,17 +9,18 @@ function Grant() {
   return (
     <div className="grant-page">
 
+<Navbar />
       {/* HERO */}
       <section className="inner-hero grant-hero">
 
   <div className="hero-img">
     <img
-      src="/image/about.png"
+      src="/image/about.webp"
       alt="Shrihaan Sahayog Grant"
     />
   </div>
 
-  <Navbar />
+  
 
   <div className="inner-hero-overlay"></div>
 

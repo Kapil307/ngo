@@ -11,13 +11,14 @@ function Donate() {
   return (
     <div className="donate-page">
 
+      <Navbar />
       {/* HERO */}
 
       <section className="donate-hero">
 
         {/* HERO IMAGE */}
         <img
-          src="/image/about.png"
+          src="/image/about.webp"
           alt="Donate"
           className="donate-hero-image"
         />
@@ -26,7 +27,7 @@ function Donate() {
         <div className="donate-hero-overlay"></div>
 
         {/* NAVBAR */}
-        <Navbar />
+
 
         {/* HERO TITLE */}
         <div className="donate-hero-content">

@@ -471,3 +471,13 @@
   }
 
 }
+
+/* =========================================================
+   FINAL RESPONSIVE FIX
+========================================================= */
+.involve-page{width:100%;max-width:100%;min-width:0;margin:0;padding:0;overflow-x:hidden;}
+.involve-hero{width:100%;max-width:100%;overflow:hidden;}
+.involve-hero>.navbar{z-index:10;width:min(910px,calc(100vw - 30px));max-width:calc(100vw - 30px);}
+.involve-container{width:calc(100% - 40px);max-width:950px;margin:0 auto;}
+@media(max-width:700px){.involve-hero{height:260px;}.involve-hero>.navbar{width:calc(100vw - 30px);max-width:calc(100vw - 30px);}.involve-container{width:calc(100% - 30px);}.involve-help-grid{grid-template-columns:1fr 1fr;}}
+@media(max-width:450px){.involve-hero{height:230px;}.involve-hero>.navbar{width:calc(100vw - 20px);max-width:calc(100vw - 20px);}.involve-container{width:calc(100% - 20px);}.involve-help-grid{grid-template-columns:1fr;}}

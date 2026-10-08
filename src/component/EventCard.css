@@ -1,0 +1,25 @@
+.event-card {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.event-card-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.event-card-image img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.event-card-content {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}

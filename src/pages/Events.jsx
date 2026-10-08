@@ -18,18 +18,19 @@ function Events() {
   return (
     <div className="events-page">
 
+      <Navbar />
       {/* HERO */}
 
       <section className="inner-hero events-hero">
 
         <div className="hero-img">
           <img
-            src="/image/about.png"
+            src="/image/about.webp"
             alt="Events"
           />
         </div>
 
-        <Navbar/>
+
 
         <div className="inner-hero-overlay"></div>
 
@@ -59,9 +60,8 @@ function Events() {
 
             <button
               type="button"
-              className={`events-tab ${
-                activeTab === "upcoming" ? "active" : ""
-              }`}
+              className={`events-tab ${activeTab === "upcoming" ? "active" : ""
+                }`}
               onClick={() => setActiveTab("upcoming")}
             >
               UPCOMING EVENTS
@@ -70,9 +70,8 @@ function Events() {
 
             <button
               type="button"
-              className={`events-tab ${
-                activeTab === "past" ? "active" : ""
-              }`}
+              className={`events-tab ${activeTab === "past" ? "active" : ""
+                }`}
               onClick={() => setActiveTab("past")}
             >
               PAST EVENTS

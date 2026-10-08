@@ -296,3 +296,16 @@
     font-size: 11px;
   }
 }
+
+/* =========================================================
+   FINAL RESPONSIVE FIX
+========================================================= */
+.past-events-page{width:100%;max-width:100%;min-width:0;margin:0;padding:0;overflow-x:hidden;}
+.events-hero{position:relative;width:100%;max-width:100%;height:455px;overflow:hidden;}
+.events-hero>img{position:absolute;inset:0;width:100%;height:100%;max-width:none;display:block;object-fit:cover;object-position:center;z-index:0;}
+.events-hero>.navbar{z-index:10;}
+.events-hero>.inner-hero-overlay{z-index:2;}
+.events-hero>.inner-hero-content{z-index:5;}
+.events-container{width:calc(100% - 40px);max-width:900px;margin:0 auto;}
+@media(max-width:700px){.events-hero{height:260px;}.events-container{width:calc(100% - 30px);}}
+@media(max-width:450px){.events-hero{height:230px;}.events-container{width:calc(100% - 20px);}}
