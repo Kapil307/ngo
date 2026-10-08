@@ -4,10 +4,20 @@ import Footer from "../component/Footer";
 import "./Volunteer.css";
 
 function Volunteer() {
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    alert("Thank you for registering as a volunteer! We will contact you soon.");
+
+    e.target.reset();
+  };
+
   return (
     <div className="volunteer-page">
 
       <Navbar />
+
       {/* =========================
           HERO SECTION
       ========================= */}
@@ -21,8 +31,6 @@ function Volunteer() {
         </div>
 
         <div className="volunteer-hero-overlay"></div>
-
-
 
         <div className="volunteer-hero-content">
           <h1>Volunteer: Lend Your Time &amp; Skills</h1>
@@ -56,7 +64,7 @@ function Volunteer() {
 
             <h2>Volunteer Registration</h2>
 
-            <form>
+            <form onSubmit={handleSubmit}>
 
               <div className="volunteer-form-group">
                 <label htmlFor="name">Full Name</label>
@@ -66,6 +74,7 @@ function Volunteer() {
                   id="name"
                   name="name"
                   placeholder="Enter your full name"
+                  required
                 />
               </div>
 
@@ -78,6 +87,7 @@ function Volunteer() {
                   id="email"
                   name="email"
                   placeholder="Enter your email"
+                  required
                 />
               </div>
 
@@ -90,6 +100,7 @@ function Volunteer() {
                   id="phone"
                   name="phone"
                   placeholder="Enter your phone number"
+                  required
                 />
               </div>
 
@@ -101,6 +112,7 @@ function Volunteer() {
                   id="interest"
                   name="interest"
                   defaultValue=""
+                  required
                 >
                   <option value="" disabled>
                     Select an area
@@ -137,6 +149,7 @@ function Volunteer() {
                   name="message"
                   rows="4"
                   placeholder="Tell us how you would like to contribute"
+                  required
                 ></textarea>
               </div>
 
