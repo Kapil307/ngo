@@ -6,7 +6,7 @@ import Initiatives from "./pages/Initiatives";
 import Impact from "./pages/Impact";
 import Events from "./pages/Events";
 import NewsMedia from "./pages/NewsMedia";
-import Donate from "./pages/donate";
+import Donate from "./pages/Donate";
 import Volunteer from "./pages/Volunteer";
 import PastEvents from "./pages/PastEvents"
 import Involve from "./pages/Involve"
