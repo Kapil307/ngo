@@ -1,6 +1,7 @@
 import "../styles/variables.css"
 import "../styles/global.css"
 import "./Footer.css"
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="site-footer">
@@ -37,9 +38,9 @@ function Footer() {
 
         <div className="footer-action">
           <span>Changing Lives, Building Futures.</span>
-          <a href="/donate" className="footer-donate">
+          <Link to="/donate" className="footer-donate">
             DONATE NOW
-          </a>
+          </Link>
         </div>
 
       </div>
@@ -50,11 +51,11 @@ function Footer() {
         </span>
 
         <div>
-          <a href="/">Home</a>
-          <a href="/about">About Us</a>
-          <a href="/initiatives">Initiatives</a>
-          <a href="/impact">Our Impact</a>
-          <a href="/contact">Contact Us</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About Us</Link>
+          <Link to="/initiatives">Initiatives</Link>
+          <Link to="/impact">Our Impact</Link>
+          <Link to="/contact">Contact Us</Link>
         </div>
       </div>
 
