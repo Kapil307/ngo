@@ -5,29 +5,31 @@ import "../styles/variables.css"
 import "./Home.css"
 import pillars from "../data/data.json";
 import focusAreas from "../data/focusArea.json"
-import education2 from "../assets/education2.png"
-import envirment from "../assets/envirment.png"
+import homeEducation from "../assets/homeEducation.png"
+import homeEnvirment from "../assets/homeEnvirment.png"
 import elderlycare from "../assets/elderlycare.jpg"
-import animals from "../assets/animals.png"
-import education from "../assets/education.jpg"
+import homeAnimal from "../assets/homeAnimal.png"
 import healthcare from "../assets/healthcare.jpg"
 import skilldevelopment from "../assets/skilldevelopment.jpg"
 import one from "../assets/one.png"
-import animalSelter from "../assets/animalSelter.png"
 import puppy from "../assets/puppy.jpg"
 import schoolGirls from "../assets/schoolGirls.png"
 import skillWoman from "../assets/skillWoman.png"
 import environment from "../assets/environment.jpg"
 import hospital from "../assets/hospital.png"
+import animalShelter from "../assets/animalSelter.png"
 const images = {
   one,
-  education,
+  homeEducation,
+  homeAnimal,
+  homeEnvirment,  
   healthcare,
   skilldevelopment,
   puppy,
   hospital,
+  elderlycare,
+  animalShelter,
   environment,
-  elderlycare
 };
 
 function Home() {
@@ -55,13 +57,13 @@ function Home() {
               <div
                 className="hero-section hero-short"
                  style={{
-                backgroundImage: `url(${education2})`
+                backgroundImage: `url(${homeEducation})`
                 }}
               >
                 <div className="hero-overlay"></div>
 
                 <div className="hero-content">
-                  <h1>EDUCATION</h1>
+                  
 
                   <div className="hero-buttons">
                     <a href="/about" className="outline-btn">
@@ -89,13 +91,13 @@ function Home() {
               <div
                 className="hero-section hero-short"
                 style={{
-                  backgroundImage: `url(${animals})`,
+                  backgroundImage: `url(${homeAnimal})`,
                 }}
               >
                 <div className="hero-overlay"></div>
 
                 <div className="hero-content">
-                  <h1>ANIMALS</h1>
+                
 
                   <div className="hero-buttons">
                     <a href="/about" className="outline-btn">
@@ -123,13 +125,13 @@ function Home() {
               <div
                 className="hero-section hero-short"
                 style={{
-                  backgroundImage: `url(${envirment})`
+                  backgroundImage: `url(${homeEnvirment})`
                 }}
               >
                 <div className="hero-overlay"></div>
 
                 <div className="hero-content">
-                  <h1>ENVIRONMENT</h1>
+                  
 
                   <div className="hero-buttons">
                     <a href="/about" className="outline-btn">
@@ -355,7 +357,7 @@ function Home() {
 
           <div className="event-image">
             <img
-              src={animalSelter}
+              src={animalShelter}
               alt="Community event"
               loading="lazy"
             />
@@ -373,7 +375,7 @@ function Home() {
             </div>
 
             <p>
-              In India, millions of street animals face challenges like lack
+              In India, millions of street homeAnimal face challenges like lack
               of shelter, medical care and compassion.
             </p>
 
