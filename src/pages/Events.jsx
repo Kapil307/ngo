@@ -18,9 +18,7 @@ function Events() {
   return (
     <div className="events-page">
 
-      {/* =========================================
-          HERO
-      ========================================= */}
+      {/* HERO */}
 
       <section className="inner-hero events-hero">
 
@@ -48,9 +46,7 @@ function Events() {
       </section>
 
 
-      {/* =========================================
-          EVENTS SECTION
-      ========================================= */}
+      {/* EVENTS SECTION */}
 
       <section className="events-section">
 
@@ -85,9 +81,7 @@ function Events() {
           </div>
 
 
-          {/* =========================================
-              UPCOMING EVENTS
-          ========================================= */}
+          {/* UPCOMING EVENTS */}
 
           {activeTab === "upcoming" && (
 
@@ -105,9 +99,7 @@ function Events() {
           )}
 
 
-          {/* =========================================
-              PAST EVENTS
-          ========================================= */}
+          {/* PAST EVENTS */}
 
           {activeTab === "past" && (
 
@@ -196,9 +188,7 @@ function Events() {
       </section>
 
 
-      {/* =========================================
-          CTA
-      ========================================= */}
+      {/* CTA */}
 
       <section className="events-cta">
 

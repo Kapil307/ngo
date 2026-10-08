@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Navbar from "../component/Navbar";
 import Footer from "../component/Footer";
-import EventCard from "../EventCard"
+import EventCard from "../component/EventCard";
 import "../styles/variables.css"
 import "../styles/global.css"
 import "./PastEvents.css";

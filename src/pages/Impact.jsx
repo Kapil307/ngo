@@ -11,7 +11,7 @@ function Impact() {
   return (
     <div className="impact-page">
 
-      {/* ================= HERO ================= */}
+      {/* HERO */}
 
       <section className="impact-hero">
 
@@ -35,7 +35,7 @@ function Impact() {
       </section>
 
 
-      {/* ================= INTRO ================= */}
+      {/* INTRO */}
 
       <section className="impact-content">
 
@@ -60,7 +60,7 @@ function Impact() {
           </p>
 
 
-          {/* ================= IMPACT CARDS ================= */}
+          {/* IMPACT CARDS */}
 
           <h3 className="impact-explore">
             Explore Our Impact Through
@@ -154,7 +154,7 @@ function Impact() {
       </section>
 
 
-      {/* ================= CTA ================= */}
+      {/* CTA */}
 
       <section className="impact-cta">
 

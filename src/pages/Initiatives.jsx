@@ -30,7 +30,7 @@ function Initiatives() {
   return (
     <div className="initiatives-page">
 
-      {/* ================= HERO ================= */}
+      {/* HERO */}
 
       <section className="initiatives-hero">
 
@@ -58,7 +58,7 @@ function Initiatives() {
       </section>
 
 
-      {/* ================= INTRO ================= */}
+      {/* INTRO */}
 
       <section className="initiatives-intro">
 
@@ -80,7 +80,7 @@ function Initiatives() {
       </section>
 
 
-      {/* ================= INITIATIVES ================= */}
+      {/* INITIATIVES */}
 
       <section className="initiatives-list">
 
@@ -138,7 +138,7 @@ function Initiatives() {
       </section>
 
 
-      {/* ================= CTA ================= */}
+      {/* CTA */}
 
       <section className="initiatives-cta">
 

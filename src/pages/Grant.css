@@ -1,6 +1,4 @@
- /* =========================================
-   GRANT PAGE LOAD ANIMATION
-========================================= */
+ /* GRANT ANIMATION */
 
 .grant-intro,
 .grant-impact,
@@ -11,9 +9,7 @@
 }
 
 
-/* =========================================
-   STAGGERED CONTENT
-========================================= */
+/* STAGGERED ANIMATION */
 
 .grant-intro {
   animation-delay: 0.15s;
@@ -28,9 +24,7 @@
 }
 
 
-/* =========================================
-   IMPACT CARDS ANIMATION
-========================================= */
+/* IMPACT CARD ANIMATION */
 
 .grant-impact-card {
   opacity: 0;
@@ -55,9 +49,7 @@
 }
 
 
-/* =========================================
-   ANIMATION
-========================================= */
+/* ANIMATION */
 
 @keyframes grantSlideUp {
   from {
@@ -84,9 +76,7 @@
 }
 
 
-/* =========================================
-   ACCESSIBILITY
-========================================= */
+/* ACCESSIBILITY */
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -100,19 +90,15 @@
   }
 
 }
-/* =========================================
-   GRANT PAGE
-========================================= */
+/* GRANT HERO */
 
 .grant-hero {
-  background-image: url("/images/hero/grant-hands-grass.jpg");
+ 
   background-position: center;
 }
 
 
-/* =========================================
-   GRANT INTRO
-========================================= */
+/* GRANT INTRO */
 
 .grant-intro {
   background: white;
@@ -142,9 +128,7 @@
 }
 
 
-/* =========================================
-   GRANT IMPACT
-========================================= */
+/* GRANT IMPACT */
 
 .grant-impact {
   background: var(--light-green);
@@ -208,9 +192,7 @@
 }
 
 
-/* =========================================
-   GRANT CTA
-========================================= */
+/* GRANT CTA */
 
 .grant-cta {
   background: var(--dark-green);
@@ -243,9 +225,7 @@
 }
 
 
-/* =========================================
-   GRANT MOBILE
-========================================= */
+  /* GRANT MOBILE */
 
 @media (max-width: 991px) {
 

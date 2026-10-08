@@ -1,8 +1,6 @@
 
 
-/* =========================================================
-   PAGE LOAD - SLIDE UP ANIMATION
-========================================================= */
+/* PAGE LOAD - SLIDE UP ANIMATION */
 
 @keyframes slideUp {
     from {
@@ -16,13 +14,7 @@
     }
 }
 
-
-
-
-
-/* =========================================================
-   INTRO SECTION
-========================================================= */
+/* INTRO-SECTION */
 
 .home-intro {
     animation: slideUp 0.9s ease-out both;
@@ -45,9 +37,7 @@
 }
 
 
-/* =========================================================
-   SECTION HEADINGS
-========================================================= */
+/* SECTION HEADINGS */
 
 .section-heading {
     animation: slideUp 0.8s ease-out both;
@@ -55,9 +45,7 @@
 }
 
 
-/* =========================================================
-   PILLARS
-========================================================= */
+/* PILLAR ROWS */
 
 .pillar-row {
     animation: slideUp 0.8s ease-out both;
@@ -80,18 +68,14 @@
 }
 
 
-/* =========================================================
-   PILLAR TITLE
-========================================================= */
+/* PILLAR TITLES */
 
 .pillar-title {
     animation: slideUp 0.7s ease-out both;
 }
 
 
-/* =========================================================
-   GRANT SECTION
-========================================================= */
+/* GRANT CONTENT */
 
 .grant-content {
     animation: slideUp 0.9s ease-out both;
@@ -108,9 +92,7 @@
     animation-delay: 0.45s;
 }
 
-/* =========================================================
-   SMOOTH PERFORMANCE
-========================================================= */
+/* SMOOTH PERFORMANCE */
 
 .hero-content h1,
 .hero-buttons,
@@ -127,9 +109,7 @@
 }
 
 
-/* =========================================================
-   ACCESSIBILITY
-========================================================= */
+/* ACCESSIBILITY */
 
 @media (prefers-reduced-motion: reduce) {
     .hero-content h1,
@@ -238,9 +218,7 @@
   overflow: hidden;
   border: none;
 }
-/* =========================
-   WHAT WE DO
-========================= */
+/* WHAT WE DO */
 
 .what-we-do {
   padding: 35px 0 50px;
@@ -341,9 +319,7 @@
 }
 
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* RESPONSIVE */
 
 @media (max-width: 768px) {
 
@@ -373,9 +349,7 @@
     font-size: 14px;
   }
 }
-/* =========================
-   GRANT SECTION
-========================= */
+/* GRANT SECTION */
 
 .grant-section {
   width: 100%;
@@ -395,9 +369,7 @@
 }
 
 
-/* =========================
-   LEFT TEXT
-========================= */
+/* LEFT TEXT */
 
 .grant-text {
   width: 100%;
@@ -421,9 +393,7 @@
 }
 
 
-/* =========================
-   BUTTON
-========================= */
+/* BUTTON */
 
 .grant-text .green-btn {
   display: inline-block;
@@ -448,9 +418,7 @@
 }
 
 
-/* =========================
-   RIGHT IMAGE
-========================= */
+/* RIGHT IMAGE */
 
 .grant-image {
   width: 100%;
@@ -470,9 +438,7 @@
 }
 
 
-/* =========================
-   TABLET
-========================= */
+/* TABLET */
 
 @media (max-width: 900px) {
 
@@ -491,9 +457,7 @@
 }
 
 
-/* =========================
-   MOBILE
-========================= */
+/* MOBILE */
 
 @media (max-width: 768px) {
 
@@ -544,9 +508,7 @@
 }
 
 
-/* =================================
-   EVENTS SECTION
-================================= */
+/* EVENTS-SECTION */
 
 .home-events {
   width: 100%;
@@ -555,9 +517,7 @@
 }
 
 
-/* =================================
-   SECTION HEADING
-================================= */
+/* SECTION HEADING */
 
 .home-events .section-heading {
   text-align: center;
@@ -582,9 +542,7 @@
 }
 
 
-/* =================================
-   EVENT CONTAINER
-================================= */
+/* EVENT-CONTAINER */
 
 .event-preview {
   width: 90%;
@@ -607,9 +565,7 @@
 }
 
 
-/* =================================
-   EVENT IMAGE
-================================= */
+/* EVENT IMAGE */
 
 .event-image {
   width: 100%;
@@ -627,9 +583,7 @@
 }
 
 
-/* =================================
-   EVENT INFORMATION
-================================= */
+/* EVENT INFORMATION */
 
 .event-info {
   padding: 15px 18px;
@@ -646,9 +600,7 @@
 }
 
 
-/* =================================
-   EVENT META
-================================= */
+/* EVENT META */
 
 .event-meta {
   display: flex;
@@ -674,9 +626,7 @@
 }
 
 
-/* =================================
-   EVENT DESCRIPTION
-================================= */
+/* EVENT DESCRIPTION */
 
 .event-info p {
   margin: 0 0 15px;
@@ -688,9 +638,7 @@
 }
 
 
-/* =================================
-   READ MORE BUTTON
-================================= */
+/* READ MORE BUTTON */
 
 .home-events .green-btn {
   display: inline-flex;
@@ -718,9 +666,7 @@
 }
 
 
-/* =================================
-   MOBILE
-================================= */
+  /* MOBILE */
 
 @media (max-width: 768px) {
 

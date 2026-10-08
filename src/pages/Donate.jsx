@@ -11,9 +11,7 @@ function Donate() {
   return (
     <div className="donate-page">
 
-      {/* =========================================
-          HERO
-      ========================================= */}
+      {/* HERO */}
 
       <section className="donate-hero">
 
@@ -38,9 +36,7 @@ function Donate() {
       </section>
 
 
-      {/* =========================================
-          DONATION SECTION
-      ========================================= */}
+      {/* DONATION SECTION */}
 
       <section className="donation-section">
 
@@ -48,9 +44,7 @@ function Donate() {
 
           <Row className="justify-content-center g-4">
 
-            {/* =====================================
-                UPI CARD
-            ===================================== */}
+            {/* UPI CARD */}
 
             <Col xs={12} md={6} lg={4}>
 
@@ -127,9 +121,7 @@ function Donate() {
             </Col>
 
 
-            {/* =====================================
-                NEFT / RTGS CARD
-            ===================================== */}
+            {/* NEFT/RTGS CARD */}
 
             <Col xs={12} md={6} lg={4}>
 
@@ -154,9 +146,7 @@ function Donate() {
       </section>
 
 
-      {/* =========================================
-          CTA
-      ========================================= */}
+      {/* CALL TO ACTION */}
 
       <section className="donate-cta">
 
@@ -183,9 +173,7 @@ function Donate() {
       </section>
 
 
-      {/* =========================================
-          FOOTER
-      ========================================= */}
+      {/* FOOTER */}
 
       <Footer />
 
